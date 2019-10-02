@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32d925c4-5a91-411c-9a79-e5352b351a65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/impl/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/SLLImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/impl/DoublyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/IterationOnLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/IterationOnLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/orange/practice/datastructures/trees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/trees/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/orange/practice/datastructures/impl/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/impl/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/orange/practice/datastructures/lists/SLLImpl.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,15 +43,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/lists/SLLImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/strings/HammingDistance.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -81,11 +69,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/impl/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="255">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/impl/DoublyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+              <folding>
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,6 +131,7 @@
         <option value="$PROJECT_DIR$/com/orange/practice/datastructures/trees/Node.java" />
         <option value="$PROJECT_DIR$/com/orange/practice/datastructures/lists/SLLImpl.java" />
         <option value="$PROJECT_DIR$/com/orange/practice/datastructures/impl/LinkedList.java" />
+        <option value="$PROJECT_DIR$/com/orange/practice/datastructures/impl/DoublyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -154,6 +156,12 @@
               <item name="data-structures-using-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-structures-using-java" type="462c0819:PsiDirectoryNode" />
               <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-structures-using-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-structures-using-java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructures" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="data-structures-using-java" type="b2602c69:ProjectViewProjectNode" />
@@ -193,7 +201,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinkedList">
+  <component name="RunManager" selected="Application.DoublyLinkedList">
     <configuration name="BinaryTreeNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.orange.practice.datastructures.trees.BinaryTreeNode" />
       <module name="data-structures-using-java" />
@@ -207,12 +215,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HammingDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.orange.practice.datastructures.strings.HammingDistance" />
+    <configuration name="DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.orange.practice.datastructures.impl.DoublyLinkedList" />
       <module name="data-structures-using-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.orange.practice.datastructures.strings.*" />
+          <option name="PATTERN" value="com.orange.practice.datastructures.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -261,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DoublyLinkedList" />
         <item itemvalue="Application.LinkedList" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.BinaryTreeNode" />
         <item itemvalue="Application.SinglyLinkedList" />
-        <item itemvalue="Application.HammingDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +293,7 @@
       <workItem from="1568084877961" duration="572000" />
       <workItem from="1568085538018" duration="3648000" />
       <workItem from="1568266746522" duration="6000" />
-      <workItem from="1569909011949" duration="3109000" />
+      <workItem from="1569909011949" duration="7194000" />
     </task>
     <task id="LOCAL-00001" summary="Added datastructures practice files">
       <created>1567485168597</created>
@@ -308,11 +316,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569909594885</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Singly Linked List Implementation">
+      <created>1569990108011</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569990108011</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12230000" />
+    <option name="totallyTimeSpent" value="16315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="0" />
@@ -357,7 +372,8 @@
     <MESSAGE value="Added datastructures practice files" />
     <MESSAGE value="Singly Linked List added" />
     <MESSAGE value="Updates on data structures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates on data structures" />
+    <MESSAGE value="Singly Linked List Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Singly Linked List Implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -402,19 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/lists/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/lists/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -429,10 +432,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/lists/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/impl/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="255">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/impl/DoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="26" column="78" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

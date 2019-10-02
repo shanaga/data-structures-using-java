@@ -1,7 +1,6 @@
 package com.orange.practice.datastructures.impl;
 
 public class LinkedList {
-
     Node head;
 
     class Node {
@@ -23,13 +22,31 @@ public class LinkedList {
         linkedList.push(1);
         System.out.println("Created linked list is : ");
         linkedList.printList();
-        System.out.println("Head : "  + linkedList.head.data);
+        System.out.println("Head : " + linkedList.head.data);
 
         // Insert after a node
-        linkedList.insertAfter(linkedList.head,4);
+        linkedList.insertAfter(linkedList.head, 4);
         System.out.println("Created linked list after intermediate insertion : ");
         linkedList.printList();
+        System.out.println("********************");
 
+        Node firstNode = linkedList.removeFirstNode();
+        System.out.println(firstNode.data);
+        System.out.println("********************");
+
+        linkedList.removeLastNode();
+        //System.out.println(lastNode.data);
+        System.out.println("List after last node removed :");
+        linkedList.printList();
+
+    }
+
+    public void printList() {
+        Node tempNode = head;
+        while (tempNode != null) {
+            System.out.println(tempNode.data + " ");
+            tempNode = tempNode.next;
+        }
     }
 
     public void push(int newData) {
@@ -81,12 +98,41 @@ public class LinkedList {
         last.next = newNode;
     }
 
-    public void printList() {
+    public Node removeFirstNode() {
+        if (head == null)
+            return null;
+
+        // Create a temporary node which will point to the same node as of head.
         Node tempNode = head;
-        while(tempNode != null) {
-            System.out.println(tempNode.data + " ");
-            tempNode = tempNode.next;
+
+        if (tempNode != null) {
+            // Move the head node pointer to the next nod
+            head = head.next;
+            // Dispose the temporary node
+            tempNode.next = null;
         }
+        return tempNode;
     }
+
+    public Node removeLastNode() {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return null;
+        }
+
+        // Find the second last node or the previous node
+        Node secondLastNode = head;
+        while (secondLastNode.next.next != null) {
+            secondLastNode = secondLastNode.next;
+        }
+
+        // Change next of second last node
+        secondLastNode.next = null;
+        return head;
+    }
+
+    // TODO : Program to delete node from middle
 
 }
