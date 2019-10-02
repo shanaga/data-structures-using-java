@@ -1,3 +1,4 @@
+/*
 package com.orange.practice.datastructures.lists;
 
 public class SinglyLinkedList {
@@ -33,15 +34,18 @@ public class SinglyLinkedList {
             tempNode = tempNode.next; // Moved with next item in the list
         }
 
-        /*// Another method to print the list
+        */
+/*//*
+/ Another method to print the list
         while (headNode != null) {
             System.out.println(headNode.value);
             headNode = headNode.next; // Moved with next item in the list
-        }*/
+        }*//*
+
     }
 }
 
 class Node {
     int value;
     Node next;
-}
+}*/

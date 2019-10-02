@@ -1,3 +1,4 @@
+/*
 package com.orange.practice.datastructures.trees;
 
 public class Node {
@@ -66,8 +67,11 @@ class Tree {
 }
 
 class Test {
-    public static void main(String[] args) {
+    */
+/*public static void main(String[] args) {
         Tree tree = new Tree("apple");
         tree.getRoot().setLeft(new Node("banana"));
-    }
+    }*//*
+
 }
+*/
