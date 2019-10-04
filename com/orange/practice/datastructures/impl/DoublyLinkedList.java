@@ -27,6 +27,16 @@ public class DoublyLinkedList {
         doublyLinkedList.insertAfter(doublyLinkedList.head.next.next.next.next, 7);
         System.out.println("***********");
         doublyLinkedList.printList();
+        System.out.println("###########");
+        doublyLinkedList.deleteNode(doublyLinkedList.head, doublyLinkedList.head);
+
+        System.out.println("List 1 after deleting first node: ");
+        doublyLinkedList.printList();
+
+        // TODO : Need to check : Not deleting from DoublyLinkedList
+        System.out.println("List 2 after deleting first node: ");
+        doublyLinkedList.deleteNode(doublyLinkedList.head, doublyLinkedList.head.next.next);
+        doublyLinkedList.printList();
 
     }
 
@@ -95,6 +105,32 @@ public class DoublyLinkedList {
         /*if(newNode.next != null) {
             newNode.prev.next = newNode;
         }*/
+    }
 
+    // TODO: Need to understand in depth
+    void deleteNode(Node headRef, Node del) {
+        if (headRef == null || del == null) {
+            return;
+        }
+
+        // If node to be deleted is head node
+        if (head == del) {
+            head = del.next;
+        }
+
+        // Change next only if node to be deleted
+        // is NOT the last node
+        if (del.next != null) {
+            del.next.prev = del.prev;
+        }
+
+        // Change prev only if node to be deleted
+        // is NOT the first node
+        if (del.prev != null) {
+            del.prev.next = del.next;
+        }
+
+        // Finally, free the memory occupied by del
+        return;
     }
 }
