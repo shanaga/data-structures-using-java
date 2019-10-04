@@ -95,5 +95,6 @@ public class DoublyLinkedList {
         /*if(newNode.next != null) {
             newNode.prev.next = newNode;
         }*/
+
     }
 }
