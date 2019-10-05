@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d925c4-5a91-411c-9a79-e5352b351a65" name="Default Changelist" comment="Improvements to Doubly Linked List + Impl for Circular List">
-      <change afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/problems/ProblemStatement.java" afterDir="false" />
+    <list default="true" id="32d925c4-5a91-411c-9a79-e5352b351a65" name="Default Changelist" comment="Problem Statement - 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/orange/practice/datastructures/problems/ProblemStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/com/orange/practice/datastructures/problems/ProblemStatement.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/problems/ProblemStatement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="286">
+              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -300,7 +300,7 @@
       <workItem from="1568085538018" duration="3648000" />
       <workItem from="1568266746522" duration="6000" />
       <workItem from="1569909011949" duration="10706000" />
-      <workItem from="1570240695405" duration="4173000" />
+      <workItem from="1570240695405" duration="5758000" />
     </task>
     <task id="LOCAL-00001" summary="Added datastructures practice files">
       <created>1567485168597</created>
@@ -351,11 +351,25 @@
       <option name="project" value="LOCAL" />
       <updated>1570163741787</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Problem Statement - 1">
+      <created>1570249697697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570249697698</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Implement to sort the list by the second character of the last name">
+      <created>1570250834167</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570250834167</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24000000" />
+    <option name="totallyTimeSpent" value="25585000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -370,7 +384,7 @@
     <frame x="0" y="23" width="1440" height="811" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -379,7 +393,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32823366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32823366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3977747" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -413,7 +427,9 @@
     <MESSAGE value="DoublyLinkedList Implementation" />
     <MESSAGE value="Delete node functionality implemented + Added Circular List file" />
     <MESSAGE value="Improvements to Doubly Linked List + Impl for Circular List" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvements to Doubly Linked List + Impl for Circular List" />
+    <MESSAGE value="Problem Statement - 1" />
+    <MESSAGE value="Implement to sort the list by the second character of the last name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement to sort the list by the second character of the last name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/com/orange/practice/datastructures/problems/ProblemStatement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="286">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
         </state>
       </provider>
     </entry>
