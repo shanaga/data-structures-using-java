@@ -2,14 +2,13 @@ package com.orange.practice.datastructures.problems;
 
 import java.util.*;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class EmailProblem {
 
     static Set<String> namesSet;
 
     public static void main(String[] args) {
-        String names = "Bruce Smith John; Tiffanie Trump Fui; Adam Milne; Ashley Rogerswithmor-echaracters";
+        String names = "Bruce Smith John; Tiffanie Trump Ryder; Adam Milne; Ashley Rogerswithmor-echaracters";
         String companyName = "Amazon";
         System.out.println(solution(names, companyName));
     }
@@ -17,6 +16,7 @@ public class EmailProblem {
     // Method to implement solution using Java 7
     public static String solution(String names, String companyName) {
         String result = "";
+        // Validate input string with given names & company name
         if (!(validateName(names) && validateCompanyName(companyName))) {
             result = "Inputs validation failed";
         } else {
