@@ -9,68 +9,58 @@ public class EmailProblem {
     static Set<String> namesSet;
 
     public static void main(String[] args) {
-        String names = "Bruce Smith; Tiffanie Trump; Brain Smith; James Walter";
-        //String names = "Bruce Smith John; Tiffanie Trump Fui; Melissa Frank Gui; James Walter Iowa";
-        // Actual //String names = "John Doe; Peter Parker; Mary Jane Watson-Parker; James Doe; John Elvis Doe; Jane Doe; Penny Parker";
-        //String names = "James Doe; Peter Parker; Mary Jane Watson-Parker; James Doe; John Elvis Doe; Jane Doe; Penny Parker";
+        String names = "Bruce Smith John; Tiffanie Trump Fui; Adam Milne; Ashley Rogerswithmor-echaracters";
         String companyName = "Amazon";
-        String emailAddresses = solution(names, companyName);
-        System.out.println("EmailAddresses : " + emailAddresses);
+        System.out.println(solution(names, companyName));
     }
 
+    // Method to implement solution using Java 7
     public static String solution(String names, String companyName) {
         String result = "";
         if (!(validateName(names) && validateCompanyName(companyName))) {
-            result = "Validation failed";
+            result = "Inputs validation failed";
         } else {
-            System.out.println("Input validated, proceed with solution");
+            // Convert populated set to list
             List<String> namesList = convertSetToList();
-            System.out.println("NamesList : " + namesList.size());
 
             String emailAddressWithName;
-            String plainEmailAddress;
-            char firstNameInitial = '\\';
+            char firstNameInitial;
             char middleNameInitial;
             String lastName = "";
-            String firstNameInitialWithLastName = "";
+            String nameInitials = "";
+
+            // Iterate through the names in the converted list
             for (String fullName : namesList) {
-                // Replace any hyphen from names
                 fullName = fullName.replace("-", "");
                 String words[] = fullName.split(" ");
-                //if (words.length <= 2) {
+                // After splitting words, iterate through all items in the words array
                 for (String word : words) {
-                    firstNameInitial = word.toLowerCase().charAt(0);
-                    System.out.println("firstNameInitial : " + firstNameInitial);
-                    lastName = words[1].toLowerCase();
-                    System.out.println("lastName : " + lastName);
-                    System.out.println("***");
-                    break;
+                    // Check if the words length is less than 2
+                    if (words.length <= 2) {
+                        // E..g., Bruce Smith; Tiffanie Trump; Brain Smith; James Walter
+                        firstNameInitial = word.toLowerCase().charAt(0);
+                        lastName = words[1].toLowerCase();
+                        nameInitials = firstNameInitial + "_" + (lastName.length() > 8 ? lastName.substring(0, 8) : lastName) + "@" + companyName.toLowerCase() + ".com";
+                        break;
+                    } else {
+                        // E.g., Bruce Smith John; Tiffanie Trump Fui; Melissa Frank Gui; James Walter Iowa
+                        firstNameInitial = word.toLowerCase().charAt(0);
+                        middleNameInitial = words[1].toLowerCase().charAt(0);
+                        lastName = words[2].toLowerCase();
+                        nameInitials = firstNameInitial + "_" + middleNameInitial + "_" + (lastName.length() > 8 ? lastName.substring(0, 8) : lastName) + "@" + companyName.toLowerCase() + ".com";
+                        break;
+                    }
                 }
-                plainEmailAddress = firstNameInitial + "_" + lastName + "@" + companyName.toLowerCase() + ".com";
-                //checkForDuplicateEmailAddress(plainEmailAddress);
-                emailAddressWithName = fullName + " <" + firstNameInitial + "_" + lastName + "@" + companyName.toLowerCase() + ".com" + ">; ";
+                emailAddressWithName = fullName + " <" + nameInitials + ">; ";
+
+                // Iterative populate all email addresses with names
                 result = result + emailAddressWithName;
             }
         }
-
         return result;
     }
 
-    public static boolean checkForDuplicateEmailAddress(String plainAddress) {
-        int count = 0;
-        String emailAddressSplit[] = plainAddress.split(";");
-        for (int i = 0; i < emailAddressSplit.length; i++) {
-            for (int j = i + 1; j < emailAddressSplit.length; j++) {
-                if (emailAddressSplit[i].equals(emailAddressSplit[j])) {
-                    count++;
-                }
-            }
-        }
-        System.out.println("Count Value : " + count);
-        return false;
-    }
-
-
+    // Method to check duplicate words in the input string
     public static Set<String> checkDuplicateWords(String input) {
         if (null == input || input.isEmpty()) {
             return Collections.emptySet();
@@ -84,15 +74,12 @@ public class EmailProblem {
                 duplicates.add(word);
             }
         }
-        System.out.println("Number of Duplicates found : " + duplicates.size());
         return duplicates;
     }
-
 
     // Method to validate valid given name
     public static boolean validateName(String names) {
         if (Pattern.matches("^[a-zA-Z-;\\s]+$", names) && !(checkDuplicateWords(names).size() > 0)) {
-            System.out.println("Given names validated successfully");
             return true;
         }
         return false;
@@ -101,7 +88,6 @@ public class EmailProblem {
     // Method to valid company name
     public static boolean validateCompanyName(String companyName) {
         if (Pattern.matches("^[a-zA-Z]+$", companyName)) {
-            System.out.println("Given company name matched successfully");
             return true;
         }
         return false;
@@ -110,11 +96,20 @@ public class EmailProblem {
     // Method to convert set to list
     public static List<String> convertSetToList() {
         List<String> namesList = new ArrayList<>(namesSet);
-
-        System.out.println("Created ArrayList is");
-        for (String x : namesList) {
-            System.out.println(x);
-        }
         return namesList;
+    }
+
+    // Method to check duplicate email addresses
+    public static boolean checkForDuplicateEmailAddress(String plainAddress) {
+        int count = 0;
+        String emailAddressSplit[] = plainAddress.split(";");
+        for (int i = 0; i < emailAddressSplit.length; i++) {
+            for (int j = i + 1; j < emailAddressSplit.length; j++) {
+                if (emailAddressSplit[i].equals(emailAddressSplit[j])) {
+                    count++;
+                }
+            }
+        }
+        return false;
     }
 }
