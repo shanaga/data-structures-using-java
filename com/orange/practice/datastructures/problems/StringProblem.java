@@ -4,7 +4,6 @@ import java.util.*;
 
 public class StringProblem {
 
-
     public static void main(String[] args) {
         // Initialize players list by adding players
         List<String> players = initializePlayersList();
@@ -12,6 +11,7 @@ public class StringProblem {
         sortListUsingLastNameSecondCharacter(players);
     }
 
+    // Method to initialize the static list
     static List<String> initializePlayersList() {
         List<String> players = new ArrayList<>();
         players.add("Ravinder Jadeja");
@@ -21,9 +21,7 @@ public class StringProblem {
         return players;
     }
 
-    /*
-      Method to sort the list by the second character of the last name
-     */
+    // Method to sort the list by the second character of the last name
     private static void sortListUsingLastNameSecondCharacter(List<String> inputList) {
         Collections.sort(inputList, (o1, o2) -> {
             String[] split1 = o1.split(" ");
