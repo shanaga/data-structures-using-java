@@ -2,7 +2,7 @@ package com.orange.practice.datastructures.problems;
 
 import java.util.*;
 
-public class ProblemStatement {
+public class StringProblem {
 
 
     public static void main(String[] args) {
