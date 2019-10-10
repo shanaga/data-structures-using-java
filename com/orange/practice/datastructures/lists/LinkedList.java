@@ -1,4 +1,4 @@
-package com.orange.practice.datastructures.impl;
+package com.orange.practice.datastructures.lists;
 
 public class LinkedList {
     Node head;
